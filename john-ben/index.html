@@ -3,18 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Lab 1</title>
-  <!-- TODO: Add a meta tag to properly set the viewport and initial scale -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- TODO: Add a link to a normalize.css file, which should be in your vendor/styles/ directory -->
-  <link rel="stylesheet" href="styles/normalize.css">
-  <!-- TODO: Link in the provided styles/icons.css file so that you can use icon fonts -->
+  <link rel="stylesheet" href="vendor/styles/normalize.css">
   <link rel="stylesheet" href="styles/icons.css">
-  <!-- TODO: Link in your SMACSS-appropriate CSS files: base, layout, and modules -->
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/layout.css">
   <link rel="stylesheet" href="styles/module.css">
   <!-- COMMENT: Explain the ordering of the loading of the stylesheets -->
-  <!-- PUT YOUR RESPONSE HERE -->
+  <!-- We set it up in the order that we thing that it will
+  load, base layout module. -->
 
   <!-- REVIEW: This is the favicon -->
   <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
@@ -23,7 +20,7 @@
   <header class="clearfix">
     <!-- COMMENT: Read the CSS Tricks article on clearfix, and explain in your own words how they are used. -->
     <!-- https://css-tricks.com/snippets/css/clear-fix/ -->
-    <!-- PUT YOUR RESPONSE HERE -->
+    <!--  -->
 
     <section class="heading-group-h1">
       <h1>
@@ -33,8 +30,8 @@
     </section>
     <nav>
       <!-- TODO: Add a hamburger menu icon here, which will show/hide depending on screen width (desktop vs. mobile). -->
-
-      <ul>
+      <div id="ham-menu" class="icon-menu hamburger">
+      <ul id="nav-menu" class="nav-ul">
         <li class="tab" data-content="articles"><a href="#" class="icon-home"> Home</a></li>
         <li class="tab" data-content="about"><a href="#" class="icon-address-book"> About</a></li>
         <li><a href="http://twitter.com/brookr" target="_blank" class="icon-twitter3"> Twitter</a></li>
