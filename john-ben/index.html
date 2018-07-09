@@ -5,7 +5,7 @@
   <title>Lab 1</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="vendor/styles/normalize.css">
-  <link rel="stylesheet" href="styles/icons.css">
+  <link rel="stylesheet" href="vendor/styles/icons.css">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/layout.css">
   <link rel="stylesheet" href="styles/module.css">
@@ -20,7 +20,8 @@
   <header class="clearfix">
     <!-- COMMENT: Read the CSS Tricks article on clearfix, and explain in your own words how they are used. -->
     <!-- https://css-tricks.com/snippets/css/clear-fix/ -->
-    <!--  -->
+    <!-- A clearfix is a way for an element to automatically clear its child elements. it adds a bit of space between the element and say, a 
+    text block. It's also instumenal in lining up two floating elements horizontally.   -->
 
     <section class="heading-group-h1">
       <h1>
@@ -30,13 +31,14 @@
     </section>
     <nav>
       <!-- TODO: Add a hamburger menu icon here, which will show/hide depending on screen width (desktop vs. mobile). -->
-      <div id="ham-menu" class="icon-menu hamburger">
+      <div id="ham-menu" class="icon-menu hamburger"></div>
       <ul id="nav-menu" class="nav-ul">
-        <li class="tab" data-content="articles"><a href="#" class="icon-home"> Home</a></li>
-        <li class="tab" data-content="about"><a href="#" class="icon-address-book"> About</a></li>
-        <li><a href="http://twitter.com/brookr" target="_blank" class="icon-twitter3"> Twitter</a></li>
-        <li><a href="http://github.com/brookr" target="_blank" class="icon-github"> GitHub</a></li>
-      </ul>
+          <li class="tab" data-content="articles"><a href="#" class="icon-home"> Home</a></li>
+          <li class="tab" data-content="about"><a href="#" class="icon-address-book"> About</a></li>
+          <li><a href="http://twitter.com/brookr" target="_blank" class="icon-twitter3"> Twitter</a></li>
+          <li><a href="http://github.com/brookr" target="_blank" class="icon-github"> GitHub</a></li>
+        </ul>
+      
     </nav>
   </header>
   <main>
