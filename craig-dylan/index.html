@@ -8,11 +8,15 @@
   <!-- TODO: Add a link to a normalize.css file, which should be in your vendor/styles/ directory -->
   <link rel="stylesheet" href="vendor/styles/normalize.css" />
   <!-- TODO: Link in the provided styles/icons.css file so that you can use icon fonts -->
-
+  <link rel="stylesheet" href="vendor/styles/icons.css" />
   <!-- TODO: Link in your SMACSS-appropriate CSS files: base, layout, and modules -->
-
+  <link rel="stylesheet" href="vendor/styles/base.css" />
+  <link rel="stylesheet" href="vendor/styles/layout.css" />
+  <link rel="stylesheet" href="vendor/styles/modules.css" />
   <!-- COMMENT: Explain the ordering of the loading of the stylesheets -->
-  <!-- PUT YOUR RESPONSE HERE -->
+  <!-- Start with reset to remove any browser settings. The icons are next so they load on the 
+  page and our css knows what to do with them. Then base, layout, and modules are layered from generic 
+  to more specific. -->
 
   <!-- REVIEW: This is the favicon -->
   <!-- We reviewed this icon looks good -->
@@ -22,7 +26,7 @@
   <header class="clearfix">
     <!-- COMMENT: Read the CSS Tricks article on clearfix, and explain in your own words how they are used. -->
     <!-- https://css-tricks.com/snippets/css/clear-fix/ -->
-    <!-- PUT YOUR RESPONSE HERE -->
+    <!-- Clearfix are used to clear the child elements of an element automatically. -->
 
     <section class="heading-group-h1">
       <h1>
