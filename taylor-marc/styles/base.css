@@ -1,0 +1,31 @@
+img {
+  max-width: 100%;
+}
+
+.clearfix {
+  clear: both;
+  overflow: hidden;
+}
+
+body {
+  color: #313131;
+}
+
+body > header {
+  background-color: #ffeaa9;
+  position: relative;
+}
+
+header div, header div a {
+  color: #777777;
+}
+
+header div a {
+  text-decoration: none;
+}
+
+header div address {
+  display: inline;
+  font-weight: bold;
+  font-style: italic;
+}
