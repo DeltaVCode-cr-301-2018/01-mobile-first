@@ -62,6 +62,30 @@ body > header {
   padding: 10px 0;
 }
 
+@media only screen and (min-width: 640px) {
+  .hamburger {
+    display: none;
+  }
+
+  .hamburger + input {
+    display: none;
+  }
+
+  .nav-ul {
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+
+  .nav-ul li {
+    display: inline-block;
+    border: none;
+  }
+
+  .nav-ul li a {
+    padding: 10px 20px 10px 0px;
+  }
+}
+
 main {
   padding: 10px;
   font-size: 1.1em;
