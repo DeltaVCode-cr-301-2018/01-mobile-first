@@ -1,0 +1,13 @@
+main header div, main header div a {
+  color: #777777;
+}
+
+main header div a {
+  text-decoration: none;
+}
+
+main header div address {
+  display: inline;
+  font-weight: bold;
+  font-style: italic;
+}
