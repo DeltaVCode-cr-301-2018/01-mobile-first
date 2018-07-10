@@ -1,0 +1,12 @@
+img {
+  max-width: 100%;
+}
+
+.clearfix {
+  clear: both;
+  overflow: hidden;
+}
+
+body {
+  color: #313131;
+}

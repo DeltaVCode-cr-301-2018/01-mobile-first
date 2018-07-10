@@ -1,0 +1,66 @@
+body > header {
+  background-color: #ffeaa9;
+  position: relative;
+  padding: 10px;
+}
+
+.hamburger {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2em;
+  z-index: 1;
+}
+
+/* Use of checkbox came from https://codepen.io/erikterwan/pen/EVzeRP?editors=1100 */
+.hamburger + input {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+.nav-ul {
+  margin-left: -200px;
+  margin-bottom: -200px;
+  padding: 0;
+}
+
+.hamburger + input:checked ~ ul {
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
+@media only screen and (min-width: 640px) {
+  .hamburger {
+    display: none;
+  }
+
+  .hamburger + input {
+    display: none;
+  }
+
+  .nav-ul {
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+
+  .nav-ul li {
+    display: inline-block;
+    border: none;
+  }
+
+  .nav-ul li a {
+    padding: 10px 20px 10px 0px;
+  }
+}
+
+main {
+  padding: 10px;
+  font-size: 1.1em;
+  line-height: 1.4em;
+}
