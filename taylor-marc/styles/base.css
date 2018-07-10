@@ -23,10 +23,29 @@ body > header {
   top: 10px;
   right: 10px;
   font-size: 2em;
+  z-index: 1;
+}
+
+/* Use of checkbox came from https://codepen.io/erikterwan/pen/EVzeRP?editors=1100 */
+.hamburger + input {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
 }
 
 .nav-ul {
-  display: none;
+  margin-left: -200px;
+  margin-bottom: -90px;
+}
+
+.hamburger + input:checked ~ ul {
+  margin-left: 0px;
+  margin-bottom: 0px;
 }
 
 main {
